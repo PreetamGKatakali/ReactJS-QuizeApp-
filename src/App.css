@@ -147,4 +147,59 @@ body{
   font-size: 40px;
   text-align: center;  
 }
+#name-button{
+  background-color: rgb(244, 99, 244);
+  padding: 10px;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px 2px 1px rgb(127, 109, 109); */
+  color: white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  font-weight: bold;
+
+
+
+}
+.heading-title{
+  color: white;
+  font-size:40px;
+  position: relative;
+  bottom: 70px;
+
+}
+.name-feild{
+  width: 40%;
+  height: 40px;
+  border-radius: 7px;
+  position: relative;
+  left: 10px;
+  bottom: 7px;
+}
+.submit-btn{
+  background: rgb(244, 99, 244);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  position: relative;
+  left: 40%;
+ 
+
+}
+.note{
+  color: chartreuse;
+  position: relative;
+  bottom: 60px;
+  left: 15px;
+}
+.title-heading{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  left: 14px;
+  bottom: 40px;
+  
+}
 

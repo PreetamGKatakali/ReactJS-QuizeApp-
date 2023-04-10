@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Quiz from "./components/quiz"
+import Userfrom from './components/from';
 
 function App() {
   return (
     <div className="App">
-      <Quiz></Quiz>
+      <Userfrom></Userfrom>
+      {/* <Quiz></Quiz> */}
        
     </div>
   );

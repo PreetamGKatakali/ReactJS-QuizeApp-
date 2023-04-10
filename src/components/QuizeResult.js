@@ -1,10 +1,15 @@
 import React from "react";
 
+
+
 function QuizeResult(props){
+    console.log(props.username)
+    
     return(
         <div className="heading-txt">
-            QuizeResult {props.resultscore}<br></br>
-            TotalScore {props.totalscore}
+            QuizeResult: {props.username} has scored {props.resultscore}<br></br>
+            TotalScore is {props.totalscore} 
+            
         </div>
     )
 }

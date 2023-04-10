@@ -4,7 +4,7 @@ import QuizeResult from "./QuizeResult"
 
 
 
-function Quiz(){
+function Quiz(props){
     const[currentQuestion,setCurrentQuestion]=useState(0)
     const[score,setscore]=useState(0)
     const[clickoptions,setclickoptions]=useState(0)
@@ -41,7 +41,7 @@ function Quiz(){
     return(
         <div>
             <p className="heading-txt"> QUIZ APP</p>
-            {showresult?(<QuizeResult resultscore={score} totalscore={QuizeData.length}></QuizeResult>):(
+            {showresult?(<QuizeResult  username={props.username} resultscore={score} totalscore={QuizeData.length}></QuizeResult>):(
             <div className="container">
                 
                 <div className="question">
