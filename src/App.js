@@ -14,7 +14,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Userfrom></Userfrom>} />
         <Route path='/admin' element={<Adminpage></Adminpage>} />
-        <Route path='/quize' element={<Quiz></Quiz>} />
       </Routes>
        
     </div>
