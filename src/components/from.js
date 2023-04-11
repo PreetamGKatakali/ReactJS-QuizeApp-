@@ -1,17 +1,23 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState,} from "react";
 import Quiz from "./quiz";
+import { useNavigate } from "react-router-dom";
+
 
 
 function Userfrom(){
     
     const[name,setname]=useState("")
     const[temp,settemp]=useState(false)
+    const nav=useNavigate()
+    
+   function adminpage(){
+     nav('/admin')
+   }
+    
 
     function namechage(props){
           setname(props.target.value)
           
-        
-        
     }
     function username(){
         alert(`welcome to the game ${name}`)
@@ -32,6 +38,7 @@ function Userfrom(){
                     </label>
                     <input type="submit" value="sumbit" onClick={username} className="submit-btn"></input>  
                 </from>
+                <button onClick={adminpage}>Admin login</button>
                 </div>
                 ):(
                  <Quiz username={name}></Quiz>
